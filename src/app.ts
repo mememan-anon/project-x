@@ -1360,6 +1360,7 @@ const renderApp = (isLoggedOut: boolean) => {
   const logoutButton = app.querySelector<HTMLButtonElement>(".logout");
   if (logoutButton) {
     logoutButton.addEventListener("click", () => {
+      window.history.pushState({}, "", "/logout");
       renderApp(true);
     });
   }
@@ -1367,7 +1368,8 @@ const renderApp = (isLoggedOut: boolean) => {
   const gtLoginButton = app.querySelector<HTMLButtonElement>(".gt-login");
   if (gtLoginButton) {
     gtLoginButton.addEventListener("click", () => {
-      state.activeKey = "ta-apply";
+      state.activeKey = "home";
+      window.history.pushState({}, "", "/");
       saveActiveKey();
       renderApp(false);
     });
