@@ -858,12 +858,12 @@ const renderTaApply = () => {
           <div class="ta-deadlines-grid">
             <div>
               <div>OMSCS<br/>Student</div>
-              <div class="ta-date">February<br/>29, 2026</div>
+              <div class="ta-date">February<br/>12, 2026</div>
               <div>11:59<br/>pm AoE</div>
             </div>
             <div>
               <div>OMSCS<br/>Alumni</div>
-              <div class="ta-date">February<br/>29, 2026</div>
+              <div class="ta-date">February<br/>12, 2026</div>
               <div>11:59<br/>pm AoE</div>
             </div>
             <div>
