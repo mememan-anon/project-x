@@ -1364,6 +1364,15 @@ const renderApp = (isLoggedOut: boolean) => {
     });
   }
 
+  const gtLoginButton = app.querySelector<HTMLButtonElement>(".gt-login");
+  if (gtLoginButton) {
+    gtLoginButton.addEventListener("click", () => {
+      state.activeKey = "ta-apply";
+      saveActiveKey();
+      renderApp(false);
+    });
+  }
+
   const brandLink = app.querySelector<HTMLAnchorElement>(".brand");
   if (brandLink) {
     brandLink.addEventListener("click", (event) => {
